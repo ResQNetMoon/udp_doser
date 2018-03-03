@@ -26,7 +26,7 @@ try:
 		while True:
 			ran += "x"
 			try:
-				sock.send(ran, sock.gethostip('www.google.ru'), 80)
+				sock.send(ran, sock.gethostip(input("hostname: "), 80)
 			except OSError:
 				print(R+"[-]"+B+"Error sending packet"+W)
 				ran = ran[0:100000]
